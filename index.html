@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://widget.meteomatics.com/v2/meteomatics-weather-widget.css" />
-    <style>
-      html, body { margin: 0; padding: 0; background: transparent; }
-    </style>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+
+  [data-meteomatics-weather-widget] {
+    transform: scale(3);
+    transform-origin: center;
+  }
+</style>
   </head>
   <body>
     <div
